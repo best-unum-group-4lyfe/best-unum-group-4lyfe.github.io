@@ -1,8 +1,8 @@
 var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, chD, correct = 0;
 var questions = [
-  ["What atom model is also known as the plum pudding model ?", "Rutherford Model", "Dalton's Model", "Bohr Model", "Thomson's model", "D"],
-  ["In which direction does electronegativity increase on the periodic table ?", "Up,Right", "Up,Left", "Down,Right", "Down,Left", "A"],
-  ["What can be separated by physical means ?", "Element", "Mixture", "Compound", "Chemical", "B"],
+  ["Which point is the reflection of the point (–7, 5) over the line y = –x ?", "(-7,5)", "(-5,7)", "(5,–7)", "(7,-5)", "B"],
+  ["Which one of these is a quadrilateral ?", "Rectangle", "Square", "Parallelogram", "All of the above", "D"],
+  ["What are the classifications of a parallelogram ?", "Two sets of congruent sides", "Opposite angles are congruent", "Adjacent angles are supplementary", "All of the above", "D"],
   ["The sugar in sweet tea is a:", "Solevent", "Concentrate", "Colloid", "Solute", "D"],
   ["What model introduced the nucleus ?", "Dalton's Model", "Bohr Model", "Rutherford Model", "Thomson's model", "C"],
   ["In which direction does atomic size increase on the periodic table ?", "Up,Right", "Up,Left", "Down,Right", "Down,Left", "D"],
