@@ -1,15 +1,16 @@
-// pos is position of where the user in the test or which question they're up to
 var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, chD, correct = 0;
-// this is a multidimensional array with 4 inner array elements with 5 elements inside them
-// if you don't want answers viewable in the code, then you should use PHP and mySQL database
 var questions = [
-  ["What is 36 + 42", "64", "78", "76", "9", "A"],
-  ["What is 7 x 4?", "21", "27", "28", "D"],
-  ["What is 16 / 4?", "4", "6", "3", "D"],
-  ["What is 8 x 12?", "88", "112", "96", "D"],
-  ["What is 8 x 12?", "88", "112", "96", "D"]
+  ["John went to the store to get some food for the game.", "Full Sentence", "Fragment", "", "", "A"],
+  ["Went to play baseball", "Full Sentence", "Fragment", "", "", "B"],
+  ["The London Bridge, as well as several other bridges, (spans, span) the Thames River.", "Spans", "Span", "", "", "A"],
+  ["The sugar in sweet tea is a:", "Solevent", "Concentrate", "Colloid", "Solute", "D"],
+  ["What model introduced the nucleus ?", "Dalton's Model", "Bohr Model", "Rutherford Model", "Thomson's model", "C"],
+  ["In which direction does atomic size increase on the periodic table ?", "Up,Right", "Up,Left", "Down,Right", "Down,Left", "D"],
+  ["Can a compound be separated by physical means ?", "Yes", "No", "Only under extreme pressure", "None of the above", "B"],
+  ["What atom model resembles the Solar System ?", "Dalton's Model", "Bohr Model", "Rutherford Model", "Thomson's model", "B"],
+  ["What groups are transition metals in ?", "3-12", "4-13", "2-11", "1-10", "A"],
+  ["What’s the smallest form of matter that retains its properties?", "Quarq", "Electron", "Atom", "Molecule", "C"],
   ];
-// this get function is short for the getElementById function
 function get(x){
   return document.getElementById(x);
 }
@@ -37,6 +38,7 @@ function renderQuestion(){
   test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br>";
   test.innerHTML += "<input type='radio' name='choices' value='D'> "+chD+"<br><br>";
   test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+  //modal
 }
 function checkAnswer(){
   // use getElementsByName because we have an array which it will loop through
@@ -50,6 +52,8 @@ function checkAnswer(){
   if(choice == questions[pos][5]){
     //each time there is a correct answer this value increases
     correct++;
+  } else {
+    window.alert("Wrong Answer");
   }
   // changes position of which character user is on
   pos++;

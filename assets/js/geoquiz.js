@@ -3,13 +3,9 @@ var questions = [
   ["Which point is the reflection of the point (–7, 5) over the line y = –x ?", "(-7,5)", "(-5,7)", "(5,–7)", "(7,-5)", "B"],
   ["Which one of these is a quadrilateral ?", "Rectangle", "Square", "Parallelogram", "All of the above", "D"],
   ["What are the classifications of a parallelogram ?", "Two sets of congruent sides", "Opposite angles are congruent", "Adjacent angles are supplementary", "All of the above", "D"],
-  ["The sugar in sweet tea is a:", "Solevent", "Concentrate", "Colloid", "Solute", "D"],
-  ["What model introduced the nucleus ?", "Dalton's Model", "Bohr Model", "Rutherford Model", "Thomson's model", "C"],
-  ["In which direction does atomic size increase on the periodic table ?", "Up,Right", "Up,Left", "Down,Right", "Down,Left", "D"],
-  ["Can a compound be separated by physical means ?", "Yes", "No", "Only under extreme pressure", "None of the above", "B"],
-  ["What atom model resembles the Solar System ?", "Dalton's Model", "Bohr Model", "Rutherford Model", "Thomson's model", "B"],
-  ["What groups are transition metals in ?", "3-12", "4-13", "2-11", "1-10", "A"],
-  ["What’s the smallest form of matter that retains its properties?", "Quarq", "Electron", "Atom", "Molecule", "C"],
+  ["Solve for x if each half of a Rohmbus diagonal is 3X+35 and 6X+10.", "4.66", "8.33", "3.7", "5.9", "B"],
+  ["If one side of a square fifteen inches long. What is the length  of the diagonal ?", "7.8", "9", "11.3", "7", "A"],
+  ["Which of the following is a classification of a  rectangle ?", "8 sides", "Two pairs of parrallel lines", "3 sides", "All angles add up to 180", "B"],
   ];
 function get(x){
   return document.getElementById(x);

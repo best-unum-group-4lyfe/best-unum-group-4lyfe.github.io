@@ -1,9 +1,9 @@
 var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, chD, correct = 0;
 var questions = [
-  ["What is love", "42", "Baby Don't Hurt Me", "A chemical reaction", "idk", "B"],
-  ["test 2", "1", "2", "3", "4", "B"],
-  ["test 3", "1", "2", "3", "4", "C"],
-  ["test 4", "1", "2", "3", "4", "D"]
+  ["Which point is the reflection of the point (–7, 5) over the line y = –x ?", "(-7,5)", "(-5,7)", "(5,–7)", "(7,-5)", "B"],
+  ["Which one of these is a quadrilateral ?", "Rectangle", "Square", "Parallelogram", "All of the above", "D"],
+  ["What are the classifications of a parallelogram ?", "Two sets of congruent sides", "Opposite angles are congruent", "Adjacent angles are supplementary", "All of the above", "D"],
+  ["Which Two of the following are classifications of rectangles ?", "Four Sides", "Three Sides", "Two pairs of parrallel lines", "All angles equal 90 degrees", "C", "D"]
   ];
 function get(x){
   return document.getElementById(x);
@@ -19,6 +19,20 @@ function renderQuestion(){
     // stops rest of renderQuestion function running when test is completed
     return false;
   }
+  /*if(pos = 4){
+    get("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+    question = questions[pos][0];
+    chA = questions[pos][1];
+    chB = questions[pos][2];
+    chC = questions[pos][3];
+    chD = questions[pos][4];
+    test.innerHTML = "<h3>"+question+"</h3>";
+    test.innerHTML += "<input type='checkbox' name='choices' value='A'> "+chA+"<br>";
+    test.innerHTML += "<input type='checkbox' name='choices' value='B'> "+chB+"<br>";
+    test.innerHTML += "<input type='checkbox' name='choices' value='C'> "+chC+"<br>";
+    test.innerHTML += "<input type='checkbox' name='choices' value='D'> "+chD+"<br><br>";
+    test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+  }*/
   get("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
   question = questions[pos][0];
   chA = questions[pos][1];
@@ -32,6 +46,7 @@ function renderQuestion(){
   test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br>";
   test.innerHTML += "<input type='radio' name='choices' value='D'> "+chD+"<br><br>";
   test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+  //modal
 }
 function checkAnswer(){
   // use getElementsByName because we have an array which it will loop through
