@@ -3,13 +3,11 @@ var questions = [
   ["John went to the store to get some food for the game.", "Full Sentence", "Fragment", "", "", "A"],
   ["Went to play baseball", "Full Sentence", "Fragment", "", "", "B"],
   ["The London Bridge, as well as several other bridges, (spans, span) the Thames River.", "Spans", "Span", "", "", "A"],
-  ["The sugar in sweet tea is a:", "Solevent", "Concentrate", "Colloid", "Solute", "D"],
-  ["What model introduced the nucleus ?", "Dalton's Model", "Bohr Model", "Rutherford Model", "Thomson's model", "C"],
-  ["In which direction does atomic size increase on the periodic table ?", "Up,Right", "Up,Left", "Down,Right", "Down,Left", "D"],
-  ["Can a compound be separated by physical means ?", "Yes", "No", "Only under extreme pressure", "None of the above", "B"],
-  ["What atom model resembles the Solar System ?", "Dalton's Model", "Bohr Model", "Rutherford Model", "Thomson's model", "B"],
-  ["What groups are transition metals in ?", "3-12", "4-13", "2-11", "1-10", "A"],
-  ["What’s the smallest form of matter that retains its properties?", "Quarq", "Electron", "Atom", "Molecule", "C"],
+  ["The paper in those boxes (is, are) for the copy machine.", "Is", "Are", "", "", "B"],
+  ["Driving a car is fast and comfortable, riding the bicycle is better for one's health.", "Driving a car is fast and comfortable, but riding a bicycle is better for one's health.", "Driving a car is fast and comfortable riding a bicycle is better for one's health.", "Although driving a car is fast and comfortable riding a bike is better for one's health.", "", "A"],
+  ["Select the sentence that uses colons correctly.", "We knew who would win the game: the Eagles.", "Barry wanted to know why I didn’t respond to his:text I hadn’t received it.", "This house has everything I need two bedrooms: a backyard and a garage.", "None of the above", "A"],
+  ["Choose the sentence that correctly show the use of a semicolon.", "She was not prepared for an overnight stay; that is, she had not brought a change of clothes.", "She was not prepared for an overnight stay: that is; she had not brought a change of clothes.", "She was not prepared for an overnight stay, that is she had not brought a change of clothes.", "She was not prepared for an overnight stay, that is; she had not brought a change of clothes.", "A"],
+  ["John is always late for work, nobody seems to care.", "Comma Splice", "Complete Sentence", "", "", "A"],
   ];
 function get(x){
   return document.getElementById(x);
