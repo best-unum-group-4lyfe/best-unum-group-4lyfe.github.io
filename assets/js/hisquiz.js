@@ -53,7 +53,7 @@ function checkAnswer(){
   }
   // checks if answer matches the correct choice
   if(choice == questions[pos][5]){
-    window.alert(why+ '' +cite);
+    window.alert(why + "\n" + cite);
     //each time there is a correct answer this value increases
     correct++;
   } else {
