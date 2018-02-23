@@ -51,12 +51,13 @@ function checkAnswer(){
   // checks if answer matches the correct choice
   if(choice == questions[pos][5]){
     //each time there is a correct answer this value increases
-    correct++;
+    correct++
+    pos++;
   } else {
     window.alert("Wrong Answer");
   }
   // changes position of which character user is on
-  pos++;
+  //pos++;
   // then the renderQuestion function runs again to go to next question
   renderQuestion();
 }
